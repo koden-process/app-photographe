@@ -1,10 +1,11 @@
-import pandas as pd
-import streamlit as st
-from PIL import Image
 import os
+import pandas as pd
+from PIL import Image
 
-batch = '1a532d5d-f99a-41b4-9ac8-240ce60da7d6'
-date = '2024-06-28'
+import streamlit as st
+
+batch = '8209f2a0-892a-407e-bde6-497213b3b1ef'
+date = '2025-02-18'
 csv_file = f'../artefacts/photos/{batch}/{date}/done.csv'
 image_base_path =  f'../artefacts/miniatures/{batch}/{date}'
 
