@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 from datetime import datetime
@@ -53,3 +54,10 @@ def upload_to_bucket( path_file: str, bucket_name: str ):
     command = f'gsutil -m rsync -r "{path_file}" "{bucket_name}"'
     print(f"Exécution de la commande : {command}")
     os.system(command)
+
+
+def create_json_file( path, data ):
+    data = json.dumps(data)
+
+    with open(path, 'w') as f:
+        f.write(data)
