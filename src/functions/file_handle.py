@@ -43,3 +43,13 @@ def extract_datetime_from_infos( infos: dict ) -> str:
     if infos.has_exif and hasattr(infos, "datetime"):
         date_time = datetime.strptime(infos.datetime, "%Y:%m:%d %H:%M:%S")
         return date_time
+
+
+def upload_to_bucket( path_file: str, bucket_name: str ):
+    if not os.path.exists(path_file):
+        print(f"Erreur : {path_file} n'existe pas.")
+        return
+
+    command = f'gsutil -m rsync -r "{path_file}" "{bucket_name}"'
+    print(f"Exécution de la commande : {command}")
+    os.system(command)
