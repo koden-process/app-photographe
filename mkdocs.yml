@@ -1,10 +1,8 @@
 site_name: app-photographe
-site_url: https://rekipe.karned.bzh
+site_url: https://koden-process.github.io/app-photographe/
 
 nav:
   - Accueil: index.md
-  - Références: references.md
-  - À propos: about.md
 
 theme:
   name: material

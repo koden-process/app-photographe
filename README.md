@@ -1,5 +1,8 @@
 # projet-photo
 
+la documentation complète est disponible
+sur [https://koden-process.github.io/app-photographe/](https://koden-process.github.io/app-photographe/)
+
 ## Description
 - Prise de vues
 - Copie de la carte mémoire dans un dossier
