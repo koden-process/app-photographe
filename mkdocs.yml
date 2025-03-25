@@ -1,0 +1,51 @@
+site_name: app-photographe
+site_url: https://rekipe.karned.bzh
+
+nav:
+  - Accueil: index.md
+  - Références: references.md
+  - À propos: about.md
+
+theme:
+  name: material
+  favicon: img/favicon.png
+  logo: img/favicon.png
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: light mode
+  font:
+    code: Roboto Mono
+  language: fr
+  features:
+    - search.suggest
+    - search.highlight
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/koden-process/app-photographe
+
+copyright: Copyright &copy; 2024 - 2025 Karned
+
+repo_url: https://github.com/koden-process/app-photographe
+repo_name: koden-process/app-photographe
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - pymdownx.emoji
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+extra_css:
+  - extra.css
